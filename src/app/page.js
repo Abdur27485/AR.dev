@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 export default function Home() {
-  // const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(false)
   return (
     <main className='mx-auto lg:mx-[80px]'>
       <header>
@@ -27,11 +27,11 @@ export default function Home() {
               <ul className='flex gap-4 items-center'>
                 {/* {
                   darkMode ?
-                    <li onClick={() => setDarkMode(!darkMode)} className='p-[6px]'>
+                    <li onClick={() => setDarkMode(!darkMode)} className='p-[6px] active:bg-gray-300 rounded-xl focus:bg-gray-300'>
                       <Sun />
                     </li>
                     :
-                    <li onClick={() => setDarkMode(!darkMode)} className='p-[6px]'>
+                    <li onClick={() => setDarkMode(!darkMode)} className='p-[6px] active:bg-gray-300 rounded-xl focus:bg-gray-300'>
                       <Moon />
                     </li>
                 } */}
@@ -42,7 +42,7 @@ export default function Home() {
             </div>
             {/* small screen navbar */}
             <div className='md:hidden'>
-              <Drawer></Drawer>
+              <Drawer darkMode={darkMode} setDarkMode={setDarkMode}></Drawer>
             </div>
           </div>
         </nav>
