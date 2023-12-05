@@ -7,11 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      boxShadow: {
+        'projectImg': '0 4px 3px 0px rgba(0, 0, 0, 0.1), 0 10px 8px 0px rgba(0, 0, 0, 0.04)',
+        'projectCard': '0 4px 3px 0px rgba(0, 0, 0, 0.07), 0 2px 2px 0px rgba(0, 0, 0, 0.06)',
+      }
     },
   },
   plugins: [],

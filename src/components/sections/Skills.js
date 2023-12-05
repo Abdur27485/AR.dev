@@ -1,8 +1,10 @@
 import React from 'react';
-import SectionTitle from '../SectionTitle';
+import SectionTitle from '../Tag';
 import Image from 'next/image';
 import SectionContainer from '../SectionContainer';
 import Link from 'next/link';
+import SectionSecondaryText from '../SectionSecondaryText';
+import Tag from '../Tag';
 
 const Skills = () => {
     const skillSet = [
@@ -54,12 +56,11 @@ const Skills = () => {
     ]
     return (
         <SectionContainer>
-            <SectionTitle title={'Skills'}></SectionTitle>
-            <p className='text-[18px] md:text-[20px] text-gray-600 text-center mt-4 mb-6 md:mb-12'>
-                The skills, tools and technologies I am really good at:
-            </p>
+            <div className='flex justify-center items-center'>
+                <Tag text={'Skills'}></Tag>
+            </div>
+            <SectionSecondaryText text={'The skills, tools and technologies I am really good at:'}></SectionSecondaryText>
             <div className="grid grid-cols-3 gap-y-4 md:grid-cols-6 md:gap-y-8 lg:grid-cols-8 lg:gap-y-12">
-
                 {
                     skillSet ?
                         skillSet.map(skill => {

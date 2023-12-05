@@ -1,12 +1,14 @@
 import React from 'react';
 import SectionContainer from '../SectionContainer';
-import SectionTitle from '../SectionTitle';
 import MyPic from '../MyPic';
+import Tag from '../Tag';
 
 const About = () => {
     return (
         <SectionContainer bg={'bg-gray-50'} id={'about'}>
-            <SectionTitle title={'About'}></SectionTitle>
+            <div className='flex justify-center items-center'>
+                <Tag text={'About'}></Tag>
+            </div>
             <div className='md:flex flex-row mt-12'>
                 <MyPic></MyPic>
                 <div className='mb-12 md:mb-0 md:w-1/2'>
