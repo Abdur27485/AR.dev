@@ -10,6 +10,7 @@ import { useState } from 'react'
 import About from '@/components/sections/About'
 import Skills from '@/components/sections/Skills'
 import Work from '@/components/sections/Work'
+import GetInTouch from '@/components/sections/GetInTouch'
 
 export default function Home() {
   // const [darkMode, setDarkMode] = useState(false)
@@ -21,6 +22,7 @@ export default function Home() {
         <About />
         <Skills />
         <Work />
+        <GetInTouch />
       </header>
     </main>
   )
