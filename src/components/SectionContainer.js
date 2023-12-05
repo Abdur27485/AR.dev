@@ -1,8 +1,8 @@
 import React from 'react';
 
-const SectionContainer = ({ children }) => {
+const SectionContainer = ({ children, id, bg }) => {
     return (
-        <div className='px-4 py-16 md:px-8 md:py-24'>
+        <div id={id ? id : ''} className={`${bg} px-4 py-16 md:px-28 md:py-24`}>
             {children}
         </div>
     );

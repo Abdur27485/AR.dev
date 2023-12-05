@@ -1,17 +1,15 @@
 import React from 'react';
-import SectionContainer from './SectionContainer';
+import SectionContainer from '../SectionContainer';
 import Image from 'next/image';
 import { Facebook, Github, Linkedin, MapPin } from 'lucide-react';
+import MyPic from '../MyPic';
 
 const Hero = () => {
     return (
         <SectionContainer>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-y-12'>
                 <div className='col-span-1'>
-                    <div className="relative w-[280px] h-[320px] mx-auto">
-                        <Image src={'/me.jpg'} width={280} height={320} className='w-[240px] border-8 border-white h-[280px] mx-auto md:h-[320px] md:w-[280px]'></Image>
-                        <div className='absolute top-5 md:top-10 md:left-10 w-[280px] h-[280px] md:h-[320px] border-8 -z-10 border-transparent bg-gray-200'></div>
-                    </div>
+                    <MyPic section={'hero'}></MyPic>
                 </div>
                 <div className='col-span-1'>
                     <h2 className='text-4xl md:text-6xl md:font-bold font-semibold text-gray-900 mb-8 md:mb-2'>Hi, I’m Abdur Rahman</h2>
