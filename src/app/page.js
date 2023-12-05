@@ -8,6 +8,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import About from '@/components/sections/About'
+import Skills from '@/components/sections/Skills'
 
 export default function Home() {
   // const [darkMode, setDarkMode] = useState(false)
@@ -17,6 +18,7 @@ export default function Home() {
         <Nav />
         <Hero />
         <About />
+        <Skills />
       </header>
     </main>
   )
