@@ -4,7 +4,7 @@ import Drawer from './Drawer';
 
 const Nav = () => {
     return (
-        <nav className='p-4 lg:py-4 lg:px-8'>
+        <nav className='p-4 lg:py-4 lg:px-20'>
             <div className="flex justify-between items-center">
                 <div>
                     <h1 className='text-2xl lg:text-3xl font-bold text-gray-900'>&lt;AR /&gt;</h1>
