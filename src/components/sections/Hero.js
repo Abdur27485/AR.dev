@@ -1,8 +1,9 @@
 import React from 'react';
 import SectionContainer from '../SectionContainer';
 import Image from 'next/image';
-import { Facebook, Github, Linkedin, MapPin } from 'lucide-react';
+import { Facebook, Github, Linkedin, LinkedinIcon, MapPin } from 'lucide-react';
 import MyPic from '../MyPic';
+import Link from 'next/link';
 
 const Hero = () => {
     return (
@@ -16,7 +17,7 @@ const Hero = () => {
                     <p className='text-base text-gray-600 mb-12'>I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 7 years, I still love it as if it was something new.</p>
                     <div className='mb-12 space-y-2'>
                         <p className='flex items-center gap-2 text-gray-600 text-base'>
-                            <MapPin />
+                            <MapPin className='text-gray-900' />
                             <span>Chittagong, Bangladesh</span>
                         </p>
                         <p className='flex items-center gap-2 text-gray-600 text-base'>
@@ -28,10 +29,16 @@ const Hero = () => {
                             <span>Available for new projects.</span>
                         </p>
                     </div>
-                    <div className='flex gap-1 items-center text-2xl'>
-                        <Github />
-                        <Facebook />
-                        <Linkedin />
+                    <div className='flex gap-2 items-center text-2xl'>
+                        <Link href={'https://github.com/abdur27485'} target='_blank' className='p-4 rounded-xl bg-gray-100 hover:bg-opacity-50 shadow-gray-200 shadow-inner transition-all duration-100 cursor-pointer'>
+                            <Github size={32} />
+                        </Link>
+                        <Link href={'https://www.linkedin.com/in/AR27485'} target='_blank' className='p-4 rounded-xl bg-gray-100 hover:bg-opacity-50 shadow-gray-200 shadow-inner transition-all duration-100 cursor-pointer'>
+                            <LinkedinIcon size={32} />
+                        </Link>
+                        <Link href={'https://facebook.com/AR27485/'} target='_blank' className='p-4 rounded-xl bg-gray-100 hover:bg-opacity-50 shadow-inner shadow-gray-200 transition-all duration-100 cursor-pointer'>
+                            <Facebook size={32} />
+                        </Link>
                     </div>
                 </div>
             </div>
