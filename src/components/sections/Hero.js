@@ -14,7 +14,7 @@ const Hero = () => {
                 </div>
                 <div className='col-span-1'>
                     <h2 className='text-4xl md:text-6xl md:font-bold font-semibold text-gray-900 mb-8 md:mb-2'>Hi, I’m Abdur Rahman</h2>
-                    <p className='text-base text-gray-600 mb-12'>I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 7 years, I still love it as if it was something new.</p>
+                    <p className='text-base text-gray-600 mb-12'>I'm a MERN stack developer with expertise in Frontend. I'm focused on creating visually appealing, responsive and user friendly websites that are fast and accessible. Even though I'm a beginner But I'm always eager to learn whenever there is a need.</p>
                     <div className='mb-12 space-y-2'>
                         <p className='flex items-center gap-2 text-gray-600 text-base'>
                             <MapPin className='text-gray-900' />

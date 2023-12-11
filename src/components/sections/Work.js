@@ -11,14 +11,16 @@ const Work = () => {
             description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus debitis, reiciendis fugit quis ipsum tenetur alias, cumque mollitia aut, nemo recusandae dolores quibusdam necessitatibus distinctio! Nesciunt asperiores minus recusandae reiciendis.',
             technologies: ['Express', 'React.js', 'Node.js', 'JavaScript', 'CSS', 'HTML'],
             liveLink: 'https://fractos-client.vercel.app/',
-            thumb: '/projectThumbs/fractos.png'
+            thumb: '/projectThumbs/fractos.png',
+            constribution: 'Frontend'
         },
         {
             name: 'Triolingo',
             description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus debitis, reiciendis fugit quis ipsum tenetur alias, cumque mollitia aut, nemo recusandae dolores quibusdam necessitatibus distinctio! Nesciunt asperiores minus recusandae reiciendis.',
             technologies: ['Express', 'React.js', 'Node.js', 'JavaScript', 'CSS', 'HTML'],
             liveLink: 'https://fractos-client.vercel.app/',
-            thumb: '/projectThumbs/triolingo.png'
+            thumb: '/projectThumbs/triolingo.png',
+            constribution: 'Frontend'
         },
         {
             name: 'Toygo',

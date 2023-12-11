@@ -12,15 +12,17 @@ const About = () => {
             <div className='md:flex flex-row mt-12'>
                 <MyPic></MyPic>
                 <div className='mb-12 md:mb-0 md:w-1/2'>
-                    <h3 className='text-2xl font-semibold mb-6 text-gray-900'>Curious about me? Here you have it:</h3>
+                    <h3 className='text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 text-gray-900'>Curious about me? Here you have it:</h3>
                     <div className='space-y-4 text-base text-gray-600'>
-                        <p>I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.</p>
-                        <p>I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.</p>
-                        <p>I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development.</p>
-                        <p>I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development.</p>
-                        <p>When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.</p>
-                        <p>One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉</p>
+                        <p>I'm a passionate, determined, and curious who specializes in MERN stack development. I am very currently curious about constantly learn and brush up my technical and other related skills. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.</p>
+                        <br />
+                        <p>In 2023, Being curious about web and its awesomeness I have decided to learn web development. After a searching a lot in the internet I came across of this amazing course by Programming Hero which is 'Complete Web Development Course with Jhankar Mahbub'.</p>
+                        <br />
+                        <p>After 6 months, I have successfully completed the course and now I'm brushing my knowledge and looking for opportunities where I can get a dynamic Environment to help me build up my career in this Web Sector.</p>
+                        <br />
+                        <p>One last thing, I'm available for freelance work, so feel free to reach out and say hello!😉</p>
                     </div>
+                    <button className=' mt-4 text-2xl md:text-3xl lg:text-4xl inline-flex items-center justify-center rounded-xl bg-gray-900 px-4 py-1.5 font-medium text-gray-50 transition-colors duration-200 hover:bg-gray-700 active:bg-gray-800'>Contact Me</button>
                 </div>
             </div>
         </SectionContainer>
