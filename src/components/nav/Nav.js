@@ -29,7 +29,7 @@ const Nav = () => {
                     </li>
                 } */}
                         <li>
-                            <button className='inline-flex items-center justify-center rounded-xl bg-gray-900 px-4 py-1.5 font-medium text-gray-50 transition-colors duration-200 hover:bg-gray-700 active:bg-gray-800'>Download Resume</button>
+                            <button className='inline-flex items-center justify-center rounded-xl bg-gray-900 px-4 py-1.5 font-medium text-gray-50 transition-colors duration-200 hover:bg-gray-700 active:bg-gray-800'  onClick={() => window.open('/assets/Abdur Rahman Frontend Developer.pdf')}>Download Resume</button>
                         </li>
                     </ul>
                 </div>

@@ -14,11 +14,11 @@ const Drawer = () => {
                 <Dialog.Content className="DialogContent">
                     <div className='p-4 flex justify-between items-center'>
                         <h3 className='font-bold text-2xl'>&lt;AR /&gt;</h3>
-                    <Dialog.Close>
-                    <div className='active:bg-gray-200 rounded-xl focus:bg-gray-200 p-[6px]' aria-label='Close'>
-                            <X size={24} />
-                        </div>
-                    </Dialog.Close>
+                        <Dialog.Close>
+                            <div className='active:bg-gray-200 rounded-xl focus:bg-gray-200 p-[6px]' aria-label='Close'>
+                                <X size={24} />
+                            </div>
+                        </Dialog.Close>
                     </div>
 
                     <div className='w-full h-0.5 bg-gray-200'></div>
@@ -45,7 +45,7 @@ const Drawer = () => {
                         </div>
                     </div> */}
                     <div className='my-4 mx-4 overflow-hidden'>
-                        <button className='w-full rounded-xl bg-gray-900 text-center py-1.5 font-medium text-gray-50 transition-colors duration-200 hover:bg-gray-700 active:bg-gray-800'>Download Resume</button>
+                        <button className='w-full rounded-xl bg-gray-900 text-center py-1.5 font-medium text-gray-50 transition-colors duration-200 hover:bg-gray-700 active:bg-gray-800' onClick={() => window.open('/assets/Abdur Rahman Frontend Developer.pdf')}>Download Resume</button>
                     </div>
 
                     {/* <Dialog.Close asChild>

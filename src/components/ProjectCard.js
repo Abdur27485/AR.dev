@@ -18,7 +18,7 @@ const ProjectCard = ({ name, description, technologies, liveLink, thumb, contrib
                 </h4>
                 <div className='my-4'>
                     <h3 className='text-xl text-gray-900 md:text-2xl font-semibold'>Worked On</h3>
-                    <div className='flex items-center mt-2 gap-2'>
+                    <div className='flex items-center flex-wrap mt-2 gap-2'>
                         {contribution?.map((text) => {
                             console.log(text)
                             return (
