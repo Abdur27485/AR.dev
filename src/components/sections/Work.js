@@ -17,7 +17,7 @@ const Work = () => {
             technologies: ['NextJS', 'React.js', 'Node.js', 'JavaScript', 'MongoDB', 'Mongoose', 'ExpressJs', 'TailwindCSS', 'DaisyUI', 'StripeJS', 'JWT', 'Firebase'],
             liveLink: 'https://fractos-client.vercel.app/',
             thumb: '/projectThumbs/fractos.png',
-            contribution: ['Frontend', 'Project Management', 'UI/UX'],
+            contribution: ['Frontend', 'UI/UX', 'Project Management'],
             githubClient: 'https://github.com/shamimhossain515419/fractos-client',
             githubServer: ''
         },
@@ -31,7 +31,7 @@ const Work = () => {
             technologies: ['ExpressJs', 'React.js', 'Node.js', 'JavaScript', 'MongoDB', 'TailwindCSS', 'JWT', 'Axios', 'Firebase'],
             liveLink: 'https://triolingo-27485.web.app/',
             thumb: '/projectThumbs/triolingo.png',
-            contribution: ['Frontend', 'ExpressJS API', 'Database'],
+            contribution: ['Frontend', 'Database', 'ExpressJS API'],
             githubClient: 'https://github.com/Abdur27485/Triolingo',
             githubServer: 'https://github.com/Abdur27485/triolingo-server'
         },
@@ -45,7 +45,7 @@ const Work = () => {
             technologies: ['ExpressJs', 'React.js', 'Node.js', 'JavaScript', 'MongoDB', 'TailwindCSS', 'Firebase', 'DaisyUI'],
             liveLink: 'https://toygo-27485.web.app/',
             thumb: '/projectThumbs/toygo.png',
-            contribution: ['Frontend', 'ExpressJS API', 'Database'],
+            contribution: ['Frontend', 'Database', 'ExpressJS API'],
             githubClient: 'https://github.com/Abdur27485/Toy-Go',
             githubServer: 'https://github.com/Abdur27485/toygo-server',
         },
@@ -61,7 +61,7 @@ const Work = () => {
             technologies: ['Express', 'React.js', 'Node.js', 'JavaScript', 'MongoDB', 'TailwindCSS', 'Firebase', 'DaisyUI'],
             liveLink: 'https://food-hunt27485.netlify.app/',
             thumb: '/projectThumbs/foodHunt.png',
-            contribution: ['Frontend', 'ExpressJS API', 'Database'],
+            contribution: ['Frontend', 'Database', 'ExpressJS API'],
             githubClient: 'https://github.com/Abdur27485/Food-Hunt',
             githubServer: 'https://github.com/Abdur27485/food-hunt-server'
         }
