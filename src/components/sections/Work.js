@@ -14,10 +14,12 @@ const Work = () => {
                 'Blog posts feature to improve knowledge and get to know about new and exciting things everyday.',
                 'Teachers expand their ways to engage with their students using feature like batch and course management system.'
             ],
-            technologies: ['Express', 'React.js', 'Node.js', 'JavaScript','MongoDB','Mongoose','NextJS','TailwindCSS','DaisyUI','StripeJS','JWT','Firebase'],
+            technologies: ['NextJS', 'React.js', 'Node.js', 'JavaScript', 'MongoDB', 'Mongoose', 'ExpressJs', 'TailwindCSS', 'DaisyUI', 'StripeJS', 'JWT', 'Firebase'],
             liveLink: 'https://fractos-client.vercel.app/',
             thumb: '/projectThumbs/fractos.png',
-            contribution: ['Frontend', 'Project Management', 'UI/UX']
+            contribution: ['Frontend', 'Project Management', 'UI/UX'],
+            githubClient: 'https://github.com/shamimhossain515419/fractos-client',
+            githubServer: ''
         },
         {
             name: 'Triolingo',
@@ -26,10 +28,12 @@ const Work = () => {
                 'Admin dashboard to manage student and instructors and the contents of the site.',
                 'Secure payment system and users are authorized using technology like JWT.'
             ],
-            technologies: ['Express', 'React.js', 'Node.js', 'JavaScript','MongoDB','TailwindCSS','JWT','Axios','Firebase'],
+            technologies: ['ExpressJs', 'React.js', 'Node.js', 'JavaScript', 'MongoDB', 'TailwindCSS', 'JWT', 'Axios', 'Firebase'],
             liveLink: 'https://triolingo-27485.web.app/',
             thumb: '/projectThumbs/triolingo.png',
-            contribution: ['Frontend', 'ExpressJS API', 'Database']
+            contribution: ['Frontend', 'ExpressJS API', 'Database'],
+            githubClient: 'https://github.com/Abdur27485/Triolingo',
+            githubServer: 'https://github.com/Abdur27485/triolingo-server'
         },
         {
             name: 'Toygo',
@@ -38,10 +42,12 @@ const Work = () => {
                 'Seller accounts can add, remove or update their product inventory.',
                 'Admin account can manage users, inventory and contents of the site.'
             ],
-            technologies: ['Express', 'React.js', 'Node.js', 'JavaScript','MongoDB','TailwindCSS','Firebase','DaisyUI'],
+            technologies: ['ExpressJs', 'React.js', 'Node.js', 'JavaScript', 'MongoDB', 'TailwindCSS', 'Firebase', 'DaisyUI'],
             liveLink: 'https://toygo-27485.web.app/',
             thumb: '/projectThumbs/toygo.png',
-            contribution: ['Frontend', 'ExpressJS API', 'Database']
+            contribution: ['Frontend', 'ExpressJS API', 'Database'],
+            githubClient: 'https://github.com/Abdur27485/Toy-Go',
+            githubServer: 'https://github.com/Abdur27485/toygo-server',
         },
         {
             name: 'Food Hunt',
@@ -52,10 +58,12 @@ const Work = () => {
                 'Authentic Information.',
                 'All the recipes are tasty as well as healthy too.'
             ],
-            technologies: ['Express', 'React.js', 'Node.js', 'JavaScript','MongoDB','TailwindCSS','Firebase','DaisyUI'],
+            technologies: ['Express', 'React.js', 'Node.js', 'JavaScript', 'MongoDB', 'TailwindCSS', 'Firebase', 'DaisyUI'],
             liveLink: 'https://food-hunt27485.netlify.app/',
             thumb: '/projectThumbs/foodHunt.png',
-            contribution: ['Frontend', 'ExpressJS API', 'Database']
+            contribution: ['Frontend', 'ExpressJS API', 'Database'],
+            githubClient: 'https://github.com/Abdur27485/Food-Hunt',
+            githubServer: 'https://github.com/Abdur27485/food-hunt-server'
         }
     ]
     return (
@@ -68,9 +76,9 @@ const Work = () => {
                 {
                     projects ?
                         projects.map(project => {
-                            const { name, description, technologies, liveLink, thumb, contribution } = project;
+                            const { name, description, technologies, liveLink, thumb, contribution, githubClient, githubServer } = project;
                             return (
-                                <ProjectCard name={name} description={description} technologies={technologies} liveLink={liveLink} thumb={thumb} contribution={contribution}></ProjectCard>
+                                <ProjectCard name={name} description={description} technologies={technologies} liveLink={liveLink} thumb={thumb} contribution={contribution} githubClient={githubClient} githubServer={githubServer}></ProjectCard>
                             )
                         })
                         :

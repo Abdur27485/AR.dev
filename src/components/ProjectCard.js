@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
 import Tag from './Tag';
-import { InfoIcon, Link } from 'lucide-react';
+import { Github, Globe, Globe2, Globe2Icon, InfoIcon, Link2, LinkIcon } from 'lucide-react';
 import Dialog from './Dialog';
+import Link from 'next/link';
 
-const ProjectCard = ({ name, description, technologies, liveLink, thumb, contribution }) => {
+const ProjectCard = ({ name, description, technologies, liveLink, thumb, contribution, githubClient, githubServer }) => {
     const [dialogShow, setDialogShow] = useState(false);
     return (
         <div className='shadow-projectCard rounded-xl md:flex justify-between items-center bg-gray-50'>
@@ -49,9 +50,31 @@ const ProjectCard = ({ name, description, technologies, liveLink, thumb, contrib
                             ''
                     }
                 </div>
-                <Link target='_blank' href={liveLink}>
-                    <Link size={24} />
-                </Link>
+                <div className='mt-5 flex items-center gap-5'>
+                    <Link target='_blank' className='flex flex-row gap-1 text-gray-900 font-semibold justify-center items-center py-2 px-5 rounded-xl bg-white hover:bg-gray-900 hover:text-white shadow-projectCard border-2 border-gray-900 transition-all duration-100' href={liveLink}>
+                        <LinkIcon size={24} />
+                        <span>Live</span>
+                    </Link>
+
+                    {
+                        githubServer ?
+                            <>
+                                <Link target='_blank' className='flex flex-row gap-1 text-gray-900 font-semibold justify-center items-center py-2 px-5 rounded-xl bg-white hover:bg-gray-900 hover:text-white shadow-projectCard border-2 border-gray-900 transition-all duration-100' href={githubClient}>
+                                    <Github size={24} />
+                                    <span>Frontend</span>
+                                </Link>
+                                <Link target='_blank' className='flex flex-row gap-1 text-gray-900 font-semibold justify-center items-center py-2 px-5 rounded-xl bg-white hover:bg-gray-900 hover:text-white shadow-projectCard border-2 border-gray-900 transition-all duration-100' href={githubServer}>
+                                    <Github size={24} />
+                                    <span>Backend</span>
+                                </Link>
+                            </>
+                            :
+                            <Link target='_blank' className='flex flex-row gap-1 text-gray-900 font-semibold justify-center items-center py-2 px-5 rounded-xl bg-white hover:bg-gray-900 hover:text-white shadow-projectCard border-2 border-gray-900 transition-all duration-100' href={githubClient}>
+                            <Github size={24} />
+                            <span>FullStack</span>
+                        </Link>
+                    }
+                </div>
             </div>
             <Dialog display={dialogShow} setDialogShow={setDialogShow} content={description}></Dialog>
         </div>
