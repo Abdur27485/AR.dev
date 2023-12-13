@@ -50,7 +50,7 @@ const ProjectCard = ({ name, description, technologies, liveLink, thumb, contrib
                             ''
                     }
                 </div>
-                <div className='mt-5 flex items-center gap-5'>
+                <div className='mt-5 flex items-center flex-wrap gap-5'>
                     <Link target='_blank' className='flex flex-row gap-1 text-gray-900 font-semibold justify-center items-center py-2 px-5 rounded-xl bg-white hover:bg-gray-900 hover:text-white shadow-projectCard border-2 border-gray-900 transition-all duration-100' href={liveLink}>
                         <LinkIcon size={24} />
                         <span>Live</span>
