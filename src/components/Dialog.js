@@ -12,8 +12,8 @@ const Dialog = ({ content, display, setDialogShow }) => {
                 <div className='flex gap-y-4 flex-col justify-center items-left mt-4'>
                     {content?.map(item => {
                         return (
-                            <div className='flex items-center gap-x-2 text-gray-900 text-lg md:text-xl'>
-                                <ChevronRight size={24} className=' self-start'></ChevronRight>
+                            <div className='text-gray-900 text-lg md:text-xl'>
+                                <ChevronRight size={24} className='mr-2'></ChevronRight>
                                 <span>{item}</span>
                             </div>
                         )
