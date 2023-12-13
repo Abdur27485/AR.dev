@@ -59,17 +59,17 @@ const ProjectCard = ({ name, description, technologies, liveLink, thumb, contrib
                     {
                         githubServer ?
                             <>
-                                <Link target='_blank' className='flex flex-row gap-1 text-gray-900 font-semibold justify-center items-center py-2 px-2 md:py-5 rounded-xl bg-white hover:bg-gray-900 hover:text-white shadow-projectCard border-2 border-gray-900 transition-all duration-100' href={githubClient}>
+                                <Link target='_blank' className='flex flex-row gap-1 text-gray-900 font-semibold justify-center items-center py-2 px-2 md:px-5 rounded-xl bg-white hover:bg-gray-900 hover:text-white shadow-projectCard border-2 border-gray-900 transition-all duration-100' href={githubClient}>
                                     <Github size={24} />
                                     <span>Frontend</span>
                                 </Link>
-                                <Link target='_blank' className='flex flex-row gap-1 text-gray-900 font-semibold justify-center items-center py-2 px-2 md:py-5 rounded-xl bg-white hover:bg-gray-900 hover:text-white shadow-projectCard border-2 border-gray-900 transition-all duration-100' href={githubServer}>
+                                <Link target='_blank' className='flex flex-row gap-1 text-gray-900 font-semibold justify-center items-center py-2 px-2 md:px-5 rounded-xl bg-white hover:bg-gray-900 hover:text-white shadow-projectCard border-2 border-gray-900 transition-all duration-100' href={githubServer}>
                                     <Github size={24} />
                                     <span>Backend</span>
                                 </Link>
                             </>
                             :
-                            <Link target='_blank' className='flex flex-row gap-1 text-gray-900 font-semibold justify-center items-center py-2 px-2 md:py-5 rounded-xl bg-white hover:bg-gray-900 hover:text-white shadow-projectCard border-2 border-gray-900 transition-all duration-100' href={githubClient}>
+                            <Link target='_blank' className='flex flex-row gap-1 text-gray-900 font-semibold justify-center items-center py-2 px-2 md:px-5 rounded-xl bg-white hover:bg-gray-900 hover:text-white shadow-projectCard border-2 border-gray-900 transition-all duration-100' href={githubClient}>
                             <Github size={24} />
                             <span>FullStack</span>
                         </Link>
