@@ -18,7 +18,7 @@ const Hero = () => {
                     <div className='mb-12 space-y-2'>
                         <p className='flex items-center gap-2 text-gray-600 text-base'>
                             <MapPin className='text-gray-900' />
-                            <span>Chittagong, Bangladesh</span>
+                            <span>Lakshmipur, Bangladesh</span>
                         </p>
                         <p className='flex items-center gap-2 text-gray-600 text-base'>
                             <div className='relative w-3 h-3 ml-1 mr-2'>
